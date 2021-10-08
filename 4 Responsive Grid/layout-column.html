@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Layout and Columns</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+  <body>
+    <!-- navgagtion  -->
+    <nav
+      class="navbar has-shadow"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <a href="" class="navbar-item">
+          <img
+            src="https://bulma.io/images/bulma-logo.png"
+            width="112"
+            height="28"
+          />
+        </a>
+        <a
+          role="button"
+          class="navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+          onclick="toggleBurger()"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navbarBasicExample" class="navbar-menu dropdown">
+        <div class="navbar-start">
+          <a class="navbar-item"> Home </a>
+          <a class="navbar-item"> Product </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link"> Category </a>
+
+            <div class="navbar-dropdown">
+              <a class="navbar-item"> Product 1 </a>
+              <a class="navbar-item"> Product 2 </a>
+              <a class="navbar-item"> Product 3 </a>
+              <hr class="navbar-divider" />
+              <a class="navbar-item"> All Prodcut </a>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-primary">
+                <strong>Sign up</strong>
+              </a>
+              <a class="button is-light"> Log in </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end navigation -->
+
+    <!-- content  -->
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-one-third has-background-danger">
+            <h1>Left Column</h1>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+          </div>
+          <div class="column has-background-primary">
+            <h1>Right Column</h1>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end content -->
+  </body>
+</html>
+<script>
+  // custom menu burger
+  const toggleBurger = () => {
+    let burger = document.querySelector(".burger");
+    let menu = document.querySelector("#" + burger.dataset.target);
+    burger.classList.toggle("is-active");
+    menu.classList.toggle("is-active");
+  };
+</script>
