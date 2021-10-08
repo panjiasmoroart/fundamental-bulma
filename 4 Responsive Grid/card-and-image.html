@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Responsive Grid</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+  <body>
+    <!-- navgagtion  -->
+    <nav
+      class="navbar has-shadow"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <a href="" class="navbar-item">
+          <img
+            src="https://bulma.io/images/bulma-logo.png"
+            width="112"
+            height="28"
+          />
+        </a>
+        <a
+          role="button"
+          class="navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+          onclick="toggleBurger()"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navbarBasicExample" class="navbar-menu dropdown">
+        <div class="navbar-start">
+          <a class="navbar-item"> Home </a>
+          <a class="navbar-item"> Product </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link"> Category </a>
+
+            <div class="navbar-dropdown">
+              <a class="navbar-item"> Product 1 </a>
+              <a class="navbar-item"> Product 2 </a>
+              <a class="navbar-item"> Product 3 </a>
+              <hr class="navbar-divider" />
+              <a class="navbar-item"> All Prodcut </a>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-primary">
+                <strong>Sign up</strong>
+              </a>
+              <a class="button is-light"> Log in </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end navigation -->
+
+    <!-- content  -->
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <!-- left column   -->
+          <div class="column is-one-third">
+            <div class="card">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-64x64">
+                      <img
+                        src="https://i.pravatar.cc/100?img=12"
+                        class="is-rounded"
+                      />
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-5">John Smith</p>
+                    <p class="subtitle is-6">@johnsmith</p>
+
+                    <nav class="level">
+                      <div class="level-left">
+                        <a class="level-item">
+                          <span class="icon is-small has-text-black"
+                            ><i class="fab fa-facebook"></i
+                          ></span>
+                        </a>
+                        <a class="level-item">
+                          <span class="icon is-small has-text-black"
+                            ><i class="fab fa-twitter"></i
+                          ></span>
+                        </a>
+                        <a class="level-item">
+                          <span class="icon is-small has-text-black"
+                            ><i class="fab fa-instagram"></i
+                          ></span>
+                        </a>
+                      </div>
+                    </nav>
+                  </div>
+                </div>
+
+                <div class="media">
+                  <div class="media-content">Member Since</div>
+                  <div class="media-right">September 2021</div>
+                </div>
+
+                <div class="media">
+                  <div class="media-content">Member Since</div>
+                  <div class="media-right">Oktober 2021</div>
+                </div>
+
+                <div class="media">
+                  <div class="media-content">
+                    <button class="button is-fullwidth is-outlined is-black">
+                      Contact Me
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end left-column -->
+
+          <!-- right column -->
+          <div class="column">
+            <div class="card">
+              <div class="card-header">
+                <div class="card-header-title">Reviews</div>
+              </div>
+              <div class="card-content">
+                <article class="media">
+                  <figure class="media-left">
+                    <p class="image is-48x48">
+                      <img
+                        src="https://i.pravatar.cc/100?img=68"
+                        class="is-rounded"
+                      />
+                    </p>
+                  </figure>
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>David Silva</strong>
+                        <br />
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nisi ut unde, accusamus voluptatum nulla aut inventore
+                        reiciendis laboriosam, omnis eaque dignissimos sequi
+                        quo? Accusantium velit, nostrum non perspiciatis
+                        corporis numquam?
+                      </p>
+                      <small>08 Oktober 2021</small>
+                    </div>
+                  </div>
+                  <div class="media-right">
+                    <span> <i class="fa fa-star"></i> 5 </span>
+                  </div>
+                </article>
+
+                <article class="media">
+                  <figure class="media-left">
+                    <p class="image is-48x48">
+                      <img
+                        src="https://i.pravatar.cc/100?img=32"
+                        class="is-rounded"
+                      />
+                    </p>
+                  </figure>
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>Safira</strong>
+                        <br />
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nisi ut unde, accusamus voluptatum nulla aut inventore
+                        reiciendis laboriosam, omnis eaque dignissimos sequi
+                        quo? Accusantium velit, nostrum non perspiciatis
+                        corporis numquam?
+                      </p>
+                      <small>08 Oktober 2021</small>
+                    </div>
+                  </div>
+                  <div class="media-right">
+                    <span> <i class="fa fa-star"></i> 10 </span>
+                  </div>
+                </article>
+
+                <article class="media">
+                  <div class="media-content">
+                    <div class="field has-addons has-addons-centered">
+                      <p class="control">
+                        <span class="select">
+                          <select>
+                            <option>1 star</option>
+                            <option>2 star</option>
+                            <option>3 star</option>
+                          </select>
+                        </span>
+                      </p>
+                      <p class="control">
+                        <input
+                          class="input"
+                          type="text"
+                          placeholder="Add your review"
+                        />
+                      </p>
+                      <p class="control">
+                        <a class="button is-primary"> Rating </a>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+          <!-- end right-column -->
+        </div>
+      </div>
+    </section>
+    <!-- end content -->
+  </body>
+</html>
+<script>
+  // custom menu burger
+  const toggleBurger = () => {
+    let burger = document.querySelector(".burger");
+    let menu = document.querySelector("#" + burger.dataset.target);
+    burger.classList.toggle("is-active");
+    menu.classList.toggle("is-active");
+  };
+</script>
